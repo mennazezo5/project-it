@@ -1,0 +1,1000 @@
+a{
+    text-decoration: none;
+}
+/*شكل الزرار الموحد للموقع*/
+#zezohome .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    color:#333;
+    background:white;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    z-index: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#zezohome .btn::before{
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    height: 100%;
+    width:100%;
+    clip-path: polygon(0 0, 90% 0, 10% 25%, 0 100%);
+    z-index: -1;
+    background:rgb(255, 134, 48);
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+
+#zezohome .btn:hover:before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#zezohome .btn:hover{
+    color:#f3ebeb;
+}
+
+ /*شكل الكلام عند كل قسم*/
+
+ #zezohome p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/*حجم الصور في البوكس*/
+#zezohome .image {
+    width: 556px;
+    height: 344px;
+}
+
+/*تظبيط الموقع في العموم*/
+#zezohome {
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition:all .2s linear;
+  
+
+
+    background:#f7f7f7;
+}
+
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+/* تظبيط راس الموقع*/
+#zezohome header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#fff;
+    padding:2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  #zezohome  header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    background-color: #fff;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, gold, chocolate);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+  #zezohome  header .logo i{
+    padding-right: .5rem;
+
+  }
+  #zezohome  header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+   color: coral;
+
+  }
+  #zezohome  header .navbar a:hover{
+    color: darkgoldenrod;}
+
+  
+
+    /*راس الموقع*/
+    #zezohome .heading{
+        text-align: center;
+        font-size: 3.5rem;
+        padding:1rem;
+        color:cornsilk;
+      }
+      
+      #zezohome h1{
+        color: cornsilk;
+      }
+ 
+   
+      #zezohome .gallery{
+    background-image: url(po/3.jpg);
+}  
+
+
+
+
+
+
+/* مكان الشكل في الفون*/
+#zezohome #menu-bar{
+    font-size: 1rem;
+    cursor: pointer;
+    color:#ff8113;
+    border:.1rem solid #ffab67d7;
+    border-radius: .3rem;
+    padding:.5rem 1.5rem;
+    display: none;
+  }
+/*تظبيط شكل كل بوكس*/
+#zezohome .gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  #zezohome  .gallery .box-container .box{
+    height:29rem;
+    flex:1 1 30rem;
+    border:1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #zezohome  .gallery .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+  }
+  
+  #zezohome  .gallery .box-container .box .content{
+    position: absolute;
+    height: 76%;
+    
+    background:rgba(255,255,255,.9);
+    padding:2rem;
+    padding-top: 5rem;
+    text-align: center;
+  }
+  
+  #zezohome   .gallery .box-container .box .content h3{
+    font-size: 2.5rem;
+    color:#333;
+    background: linear-gradient(90deg, gold, chocolate);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  #zezohome .gallery .box-container .box .content p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:1rem 0;
+  }
+  
+  #zezohome .gallery .box-container .box:hover .content{
+    top:0;
+  }
+
+
+  #zezohome  .review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  #zezohome  .review .box-container .box{
+    text-align: center;
+    padding:2rem;
+    border:1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    border-radius: .5rem;
+    flex:1 1 20rem;
+    background:chocolate;
+    margin-top: 6rem;
+  }
+  #zezohome  .review .box-container .box:hover{
+    background-color: rgb(251, 137, 60);
+  }
+
+  #zezohome  .review .box-container .box img{
+    height: 12rem;
+    width:12rem;
+    border-radius: 50%;
+    border:1rem solid #fff;
+    margin-top: -8rem;
+    object-fit: cover;
+  }
+  
+  #zezohome  .review .box-container .box h3{
+    font-size: 2.5rem;
+    color:#fff;
+    padding:.5rem 0;
+
+  }
+
+  
+  #zezohome  .review .box-container .box p{
+    font-size: 1.5rem;
+    color:#eee;
+    padding:1rem 0;
+  }
+
+  #zezohome  section {
+    padding: 2rem 9% ;
+}
+
+#zezohome table {
+  color: #3c2c0d;
+  width: 50%;
+ 
+  
+  margin-top: 10px;
+}
+
+#zezohome th, td  {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+#zezohome th ,tr {
+  background-color: #f2f2f2;
+  color: #333;
+  border-radius: 20px;
+}
+
+#zezohome tbody tr:hover {
+  background-color: #fed499;}
+
+  /* عند الحركة في الموقع*/
+  #zezohome #scroll-top{
+    position: fixed;
+    top:-120%;
+    right:2rem;
+    padding:.5rem 1.5rem;
+    font-size: 4rem;
+    background:brown;
+    color:#fff;
+    border-radius: .5rem;
+    transition: 1s linear;
+    z-index: 1000;
+  }
+  
+  #zezohome  #scroll-top.active{
+    top:calc(100% - 12rem)
+  }
+
+
+/* read */
+#zezohome .shop-product > img {
+  width: 300px;
+  height:400px;
+  border-radius: 5%;
+  
+}
+
+#zezohome .shop-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 5rem;
+ /* margin-bottom: 5rem;*/
+  background-image: url(po/3.jpg);
+
+}
+#zezohome .shop-section h2{
+  font-size: 3rem;
+  color: cornsilk;
+}
+#zezohome .shop-section > p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+#zezohome h5{
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+#zezohome .shop-product {
+  border-radius: 5%;
+  box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.11);
+  background-color: rgb(248, 222, 200);
+  overflow: hidden;
+}
+#zezohome .shop-product:hover{
+    background-color: #ff9f4b;
+}
+#zezohome .shop-text-part {
+  padding: 0.5rem;
+}
+#zezohome .shop-star-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+#zezohome .shop-products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  grid-gap: 2rem;
+  width: 80%;
+  justify-content: center;
+}
+
+
+
+  /*اللنكات اللي تحت */
+  #zezohome .footer .share{
+    display: flex;
+    gap:1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #zezohome .footer .credit{
+    padding:2.5rem 1rem;
+    color:#fff;
+    font-weight: normal;
+    font-size: 2rem;
+  }
+  
+  #zezohome  .footer .credit span,.heading span{
+    text-transform: uppercase;
+    background: linear-gradient(90deg, chocolate, rgb(87, 41, 8));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #zezohome .footer {
+    background: rgb(242, 188, 149);
+    text-align: center;
+}
+/*حجم المكان*/
+
+
+
+/* media queries  
+تعديل عند التحريك*/
+
+@media(max-width:991px){
+
+
+  #zezohome header{
+    padding:2rem;
+  }
+
+  #zezohome section{
+    padding:2rem;
+  }
+
+}
+
+@media(max-width:3000px){
+
+    #zezohome #menu-bar{
+    display: initial;
+  }
+
+  #zezohome  header .navbar{
+    position: absolute;
+    top:100%; right:0;
+    background: #f7f7f7;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  #zezohome  header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+
+  #zezohome  header .navbar a{
+    color: black;
+    margin: 1.5rem;
+    padding:1.5rem;
+    display: block;
+    border:.2rem solid rgba(0,0,0,.1);
+    border-left:.5rem solid chocolate;
+    background:#fff;
+ 
+
+  }
+
+}
+
+
+
+
+@media (max-width: 515px) {
+  #zezohome  header .navbar a {
+  font-size: 50%;}
+
+    #zezohome .shop-section > p{
+    font-size: 12px;
+  }
+}
+
+
+  @media (max-width: 424px) {
+    #zezohome  .shop-product > img{
+   
+  object-fit: cover;}
+  }
+
+/* login page*/
+:root {
+    --co: chocolate
+}
+
+
+
+#zezologin{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    background:#f9f9f9;
+}
+
+
+
+html #zezologin{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+#zezologin section{
+    min-height: 80vh;
+    padding:0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+#zezologin .heading{
+    text-align: center;
+    background:var(--co);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+}
+
+#zezologin header{
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#zezologin header .logo{
+    font-size: 2rem;
+    color:rgb(255, 134, 48);
+}
+
+#zezologin header .logo span{
+    color:gold;
+}
+
+#zezologin header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color:rgb(255, 134, 48);
+}
+
+#zezologin header .navbar a:hover{
+    color:gold;
+}
+#zezologin header label{
+    font-size: 3rem;
+    color:rgb(255, 134, 48);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#zezologin .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(po/11.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#zezologin .home .image img{
+    width:40vw;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
+
+#zezologin form span{
+    color: var(--co);
+}
+#zezologin .home .content h3{
+    font-size: 5.5rem;
+    color:#333;
+    text-transform: uppercase;
+}
+
+#zezologin .home .content h3 span{
+    text-transform: uppercase;
+    background: linear-gradient(90deg, gold, var(--co));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#zezologin .home .content p{
+    font-size: 1.7rem;
+    color:#666;
+    padding:1rem 0;
+}
+
+#zezologin .features .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#zezologin .features .box-container .box{
+    flex:1 1 20rem;
+    background:#fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin:1.5rem;
+    padding:3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+#zezologin .features .box-container .box:hover{
+    background-color: #fed499;
+}
+
+#zezologin .features .box-container .box img{
+    height: 15rem;
+}
+
+#zezologin .features .box-container .box h3{
+    font-size: 2rem;
+    color:#333;
+    padding-top: 1rem;
+}
+
+#zezologin .features .box-container .box p{
+    font-size: 1.3rem;
+    color:#666;
+    padding: 1rem 0;
+}
+
+#zezologin .about{
+    background:url(po/3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+    padding-top: 60px;
+}
+
+#zezologin .about h1{
+    padding-bottom: 20px;
+    text-align-last: end;
+    padding-right: 200px;
+}
+#zezologin .about .column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+
+
+
+#zezologin .about .column .image img{
+    width:100%;
+}
+
+#zezologin .about .column .content{
+    flex:1 1 30rem;
+    margin-left: 50%;
+}
+
+
+#zezologin .about .column .content h3{
+    font-size: 3rem;
+    color:#666;
+}
+
+#zezologin .about .column .content p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:1rem 0;
+}
+
+#zezologin .about .column .content .buttons a:last-child{
+    margin-left: 2rem;
+}
+
+#zezologin .newsletter{
+    text-align: center;
+    padding:5rem 1rem;
+    background:url(po/22.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#zezologin .newsletter h3{
+    color:#fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#zezologin .newsletter p{
+    color:#fff;
+    font-size: 1.6rem;
+    margin:2rem auto;
+    width:70rem;
+}
+
+#zezologin .newsletter form{
+    display: flex;
+    max-width: 70rem;
+    border:.2rem solid #fff;
+    padding:.5rem;
+    border-radius: 5rem;
+    margin:2rem auto;
+    height:5.5rem;
+}
+
+#zezologin .newsletter form input[type="email"]{
+    padding:0 2rem;
+    font-size: 1.7rem;
+    background:none;
+    width:100%;
+    color:#fff;
+    text-transform: none;
+    border: none;
+}
+
+#zezologin .newsletter form input[type="email"]::placeholder{
+    color:#eee;
+    text-transform: capitalize;
+}
+
+#zezologin .newsletter form input[type="submit"]{
+    background:#fff;
+    width:20rem;
+    font-size: 1.7rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+#zezologin .newsletter form input[type="submit"]:hover{
+    color:gold;
+}
+
+
+#zezologin .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    color: #333;
+    background: white;
+    position: relative;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    z-index: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#zezologin .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 10% 25%, 0 100%);
+    z-index: -1;
+    background: rgb(255, 134, 48);
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+#zezologin .btn:hover:before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#zezologin .btn:hover{
+    color:#f3ebeb;
+}
+#zezologin .contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+#zezologin .contact .row .image{
+    flex:1  1 40rem;
+}
+
+#zezologin .contact .row .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#zezologin .contact .row form{
+    flex:1  1 40rem;
+    padding:2rem 4rem;
+}
+
+#zezologin .contact .row form .inputBox{
+    padding:1rem 0;
+}
+
+#zezologin .contact .row form .inputBox h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+}
+
+#zezologin .contact .row form .inputBox input, .contact .row form .inputBox textarea{
+    width: 100%;
+    padding:1.5rem;
+    font-size: 1.5rem;
+    border:.1rem solid rgba(0,0,0,.1);
+}
+
+#zezologin .contact .row form .inputBox textarea{
+    resize: none;
+    height: 13rem;
+}
+#zezologin .contact .row form .aa{
+    text-align: center;
+}
+
+
+
+#zezologin .footer{
+    background-color: var(--co);
+
+    min-height: 60vh;
+}
+
+#zezologin .footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#zezologin .footer .box-container .box{
+    margin:2rem;
+    flex:1 1 25rem;
+}
+
+
+
+#zezologin .footer .box-container .box p{
+    font-size: 1.5rem;
+    color:white;
+    padding: 1rem 0;
+}
+
+#zezologin .footer .box-container .box p i{
+    padding-right: 1rem;
+    color:white;
+}
+
+#zezologin .footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:1rem 0;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, gold, rgb(255, 188, 157));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#zezologin .footer .box-container .box a{
+    height:5rem;
+    width:5rem;
+    line-height: 4.8rem;
+    text-align: center;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: 50%;
+    font-size: 2rem;
+    color:white;
+    margin-right: 1rem;
+}
+
+#zezologin .footer .box-container .box a:hover{
+    background:white;
+    color:#fff;
+}
+
+
+#zezologin .footer .credit{
+    padding:2rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color:white;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+#zezologin .footer .credit span{
+    text-transform: uppercase;
+    background: linear-gradient(90deg, gold, rgb(255, 161, 94));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+#zezologin #scroll-top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    height:6rem;
+    width:6rem;
+    line-height: 6rem;
+    font-size: 3rem;
+    text-align: center;
+    color:var(--green);
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background:#f9f9f9;}
+
+/* media queries  */
+
+@media (max-width:1200px){
+    
+    html #zezologin {
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:991px){
+    
+    #zezologin  section{
+        padding:0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
+
+    #zezologin .about .column .content{
+      margin-left: 0;}  
+}
+
+@media (max-width:768px){
+
+    #zezologin header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #zezologin header .navbar{
+        position: absolute;
+        top:100%; left: 0;
+        width:100%;
+        background:#fff;
+        padding:1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    #zezologin header .navbar a{
+        display: block;
+        margin:2rem 0;
+        font-size: 2rem;
+    }
+    #zezologin .home{
+        flex-flow: column-reverse;
+    }
+
+    #zezologin  .home .image img{
+        width:100%;
+    }
+
+    #zezologin .home .content h3{
+        font-size: 4rem;
+    }
+
+    #zezologin  .home .content p{
+        font-size: 1.5rem;
+    }
+
+    #zezologin  .about{
+        background-position: right;
+    }
+
+    #zezologin .newsletter p{
+        width:auto;
+    }
+
+}
+
+@media (max-width:450px){
+    
+    html #zezologin {
+        font-size: 50%;
+    }
+
+    #zezologin .about .column .content .buttons a{
+        width:100%;
+        text-align: center;
+    }
+
+    #zezologin .about .column .content .buttons a:last-child{
+        margin: 1rem 0;
+    }
+
+}
+@media (max-width:788px){
+    #zezologin  #menu{
+        display: block;
+    }
+    #zezologin  section{
+        padding:0 3%;
+        padding-top: 9rem;
+    }
+}
+@media (max-width:400px){
+
+       html #zezologin {
+        font-size: 50%;
+    }
+
+} 
